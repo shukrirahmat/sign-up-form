@@ -63,21 +63,51 @@ a {
     color: orange;
 }
 
+h2 {
+    font-size: 20px;
+    margin: 0px;
+}
+
 form {
-    flex: 5
+    flex: 5;
+    background-color: rgb(206, 215, 224);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.formheader {
+    padding: 40px 40px;
+    color:rgb(38, 47, 54);
+    padding-right: 100px;
+}
+
+.formmiddle {
+    background-color: white;
+    margin: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 20px 40px;
+}
+
+.formbottom {
+    padding: 40px 40px;
+    color:rgb(38, 47, 54);
+    padding-right: 100px;
 }
 
 .inputcontainer {
-    background-color: white;
-    margin: 0;
+    padding: 20px 0px;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px 60px;
 }
 
 .inputcontainer div {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin: 8px;
-
 }
 
 .inputcontainer div label {
@@ -96,5 +126,20 @@ input {
 
 input:focus {
     outline: none;
-    border: 2px solid blue;
+    border: 2px solid lightblue;
+}
+
+button {
+    border: none;
+    color: white;
+    background-color: orange;
+    padding: 15px 35px;
+    font-size: 16px;
+    font-weight: 900;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.formbottom a {
+    text-decoration: none;
 }
