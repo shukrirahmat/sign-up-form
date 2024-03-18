@@ -120,13 +120,33 @@ form {
 input {
     font-size: 18px;
     border-radius: 4px;
-    border: 2px solid black;
+    border: 2px solid rgb(0 0 0 / 20%);
     padding: 4px 8px;
 }
 
 input:focus {
     outline: none;
-    border: 2px solid lightblue;
+    border: 2px solid slategrey ;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.19);
+}
+
+input:user-invalid {
+    border: 2px solid red;
+}
+
+.error {
+    border: 2px solid red;
+}
+
+.pwbox {
+    min-height: 70px;
+}
+
+.notmatch::after {
+    content: "*Password do not match";
+    color: red;
+    display: inline-block;
+    font-size: 12px;
 }
 
 button {
