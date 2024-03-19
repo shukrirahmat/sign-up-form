@@ -23,6 +23,7 @@ body {
     flex: 3;
     background-image: url(images/flowers.jpg);
     background-size: 600px;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
